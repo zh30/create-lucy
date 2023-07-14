@@ -1,0 +1,44 @@
+{
+  "name": "create-lucy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "author": "zhanghe",
+  "bin": {
+    "create-lucy": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanghecool/create-lucy.git"
+  },
+  "scripts": {
+    "dev": "unbuild && node index.js",
+    "build": "unbuild",
+    "publish": "unbuild && npm publish ."
+  },
+  "keywords": [
+    "create-lucy",
+    "create-lucy-cli",
+    "create-lucy-cli-template"
+  ],
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "prompts": "^2.4.2",
+    "tsc": "^2.0.4",
+    "unbuild": "^1.2.1"
+  }
+}
